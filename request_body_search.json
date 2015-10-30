@@ -1,0 +1,20 @@
+{
+  "record_type": "salesorder",
+  "batch_size": 10,
+  "lower_bound": 0,
+  "search_filters": [
+    {
+      "name": "status",
+      "operator": "anyOf",
+      "value": "SalesOrd:F"
+    }
+  ],
+  "search_columns": [
+    {
+      "name": "internalid"
+    },
+    {
+      "name": "trandate"
+    }
+  ]
+}
