@@ -1,0 +1,17 @@
+---
+base:
+  build: .
+  volumes:
+    - ".:/app"
+
+test:
+  extends:
+    file: docker-compose.yml
+    service: base
+  command: ./jspec
+
+debug:
+  extends:
+    file: docker-compose.yml
+    service: base
+  command: node debug /usr/local/bin/jasmine-node spec
