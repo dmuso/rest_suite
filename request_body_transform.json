@@ -1,0 +1,9 @@
+{
+  "source_type": "salesorder",
+  "result_type": "invoice",
+  "internalid": "162335",
+  "transform_values": [],
+  "literal_fields": [],
+  "sublists": []
+}
+
